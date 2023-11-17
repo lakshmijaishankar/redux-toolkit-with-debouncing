@@ -1,0 +1,17 @@
+.movie__banner {
+    max-height: 500px;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    // scroll-snap-type: x mandatory;
+    // scroll-padding-inline-start: 1rem;
+    // background: white;
+    // background:
+    //     linear-gradient(45deg, hsl(0, 0%, 0%, 0.6), hsl(0, 0%, 100%, 0.2)),
+    //     url("https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3634/1373634-i-202aea42c71f") no-repeat
+    //         content-box;
+    // background-size: cover;
+    // background-attachment: fixed;
+}

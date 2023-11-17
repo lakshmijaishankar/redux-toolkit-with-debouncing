@@ -1,0 +1,45 @@
+@import "../../common/common.scss";
+.search__movie_container {
+    position: fixed;
+    left: 0;
+    width: 20rem;
+    transform: translateX(5rem);
+    transition: transform 300ms ease-in-out;
+    // z-index: -1;
+}
+.movie__saerch__input {
+    & input {
+        border-radius: 0.3rem;
+        outline: none;
+        border: 1.7px solid $font-primary;
+        color: $font-primary;
+        font-size: 1.1rem;
+        width: 100%;
+        height: 2.5rem;
+        background: transparent;
+        padding: 0 1rem 0 1.8rem;
+        caret-color: #c91316;
+        background: $primary-color;
+        font-weight: map-get($map: $font-wieght, $key: light);
+        &::-webkit-input-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.05rem;
+            font-size: 0.85rem;
+            color: $font-primary;
+            font-weight: map-get($map: $font-wieght, $key: sem-light);
+        }
+    }
+    & button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        height: 100%;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

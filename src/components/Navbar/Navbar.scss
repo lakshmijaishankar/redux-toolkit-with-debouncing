@@ -1,0 +1,63 @@
+@import "../../common/common.scss";
+
+.movie__aside__left {
+    position: fixed;
+    width: 5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.movie__navbar {
+    background: $secondary-color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $font-primary;
+
+    & .nav__links {
+        display: flex;
+        flex-direction: column;
+        // background: #171d2d;
+        & li {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.5rem 0;
+            padding: 0.3rem;
+            position: relative;
+            // z-index: 1000;
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover::after {
+                display: block;
+            }
+            &::after {
+                content: "";
+                right: 0;
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                width: 0.15rem;
+                background: $font-primary;
+                display: none;
+                transition: height 200ms linear;
+                height: 100%;
+            }
+            & span {
+                font-size: 0.7rem;
+                font-weight: map-get($map: $font-wieght, $key: sem-dark);
+                color: #c91316;
+                text-transform: capitalize;
+                margin: 0.1rem 0;
+            }
+            & svg {
+                font-size: 1.5rem;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
